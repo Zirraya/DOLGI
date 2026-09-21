@@ -1,20 +1,13 @@
 fun f2 (x : real, y : real, z : real) : real =
   let
-
-    val min_val = Int.min(a, Int.min(b, c))
-    val last_a = a mod 10
-    val last_b = b mod 10
-    val last_c = c mod 10
-    val max_last = Int.max(last_a, Int.max(last_b, last_c))
-
+    val m = Real.min ((x + y + z) / 3.0, x * y *z)
   in
-
-    min_val * max_last
+    m / (1.0 + m * m)
   end
 
 (* ТЕСТОВЫЕ ЗАПУСКИ *)
-val test1 = f2 (70, 35, 78) (* Ожидаемое значение 280*)
-val test2 = f2 (500, ~40, 50) (* Ожидаемое значение 0*)
-val test3 = f2 (12, 43, 100)  (* Ожидаемое значение 36*)
-val test4 = f2 (20, 30, 300)  (* Ожидаемое значение 0*)
-val test5 = f2 (17, 5, ~150)  (* Ожидаемое значение -1050*)
+val test1 = f2 (70.5, 35.2, 78.2) (* Ожидаемое значение 280*)
+val test2 = f2 (500.8, ~40.7, 50.5) (* Ожидаемое значение 0*)
+val test3 = f2 (12.7, 43.3, 10.0)  (* Ожидаемое значение 36*)
+val test4 = f2 (20.8, 30.1, 300.5)  (* Ожидаемое значение 0*)
+val test5 = f2 (17.7, 5.7, ~150.2)  (* Ожидаемое значение -1050*)
