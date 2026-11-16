@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.7)  16 SEP 2026 13:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.7)  30 SEP 2026 12:46
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -547,7 +547,7 @@ Overfull \hbox (0.39154pt too wide) in paragraph at lines 57--58
 {c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc}]
 
 [2]
-runsystem(latexminted cleantemp  --timestamp 20260916133612 5DE68A72481D288933D6FC709AA290CF)...executed.
+runsystem(latexminted cleantemp  --timestamp 20260930124636 5DE68A72481D288933D6FC709AA290CF)...executed.
 
  (./lect.aux)
  ***********
@@ -556,15 +556,15 @@ L3 programming layer <2024-12-25>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 9974 strings out of 473250
- 204166 string characters out of 5722014
+ 9982 strings out of 473250
+ 204277 string characters out of 5722014
  714004 words of memory out of 5000000
- 33048 multiletter control sequences out of 15000+600000
+ 33056 multiletter control sequences out of 15000+600000
  567559 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  85i,6n,93p,388b,221s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb>
-Output written on lect.pdf (2 pages, 76301 bytes).
+Output written on lect.pdf (2 pages, 79468 bytes).
 PDF statistics:
  37 PDF objects out of 1000 (max. 8388607)
  22 compressed objects within 1 object stream
