@@ -1,33 +1,22 @@
-fun f3 ((n: int, r: real, ints: int list), pairs: (int * real) list) =
-    let
-        val (a, b) = hd pairs
-        val nPlus5 = n + 5
-        val aPlusBPlus7 = a + Real.round(b) + 7
-    in
-        real(nPlus5) * real(aPlusBPlus7)
-    end
 
-(* Тесты *)
+fun f3 (a1 : real * real * int list, a2 : (int * int) list)
+    : real * real * real * real list =
+  let
+    val x = #2 a1
+    val xPlus5 = x + 5.0
+    val xMinus3 = x - 3.0
+    val xPlusY = x + real (#1 (hd (tl a2)))
+    val sumSquared = xPlusY * xPlusY
+    val firstValue = sumSquared + xMinus3 / xPlus5
+    val thirdValue = sumSquared / xMinus3
+  in
+    ( firstValue, xPlus5, thirdValue
+    , [firstValue, thirdValue] )
+  end
 
-(* Результат: 132.0 *)
-val test0 = f3 ( (7, 9.3, [6, 0, 3, 2, 4])
-               , [(3, 1.1), (6, 0.0), (7, 3.2), (10, 1.8)]
-               )
-
-(* Результат: 77.0 *)
-val test1 = f3 ( (2, 70.3, [6, 1, 3, 2, 4])
-               , [(3, 1.1), (6, 0.0), (7, 3.2), (10, 1.8)] 
-               )
-
-(* Результат: 176.0 *)
-val test2 = f3 ( (11, 9.3, [1, 0, 3, 2, 4])
-               , [(3, 1.1), (6, 1.0), (7, 3.2), (10, 1.8)]
-               )
-
-(* Результат: 143.0 *)
-val test3 = f3 ( (8, 9.7, [6, 1, 3, 2, 4])
-               , [(3, 1.1), (9, 1.0), (7, 3.2), (200, 1.8)] 
-               )
+val test0 = f3 ((1.0, 4.0, [6, 0, 3]), [(3, 7), (2, 8)])
+val test1 = f3 ((2.0, 6.0, [1, 2, 3]), [(9, 4), (5, 6)])
+val test2 = f3 ((0.0, 8.5, [4, 5, 6]), [(1, 2), (7, 3)])
 
 
 
